@@ -1,40 +1,300 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
 
-		<title>reveal.js</title>
+    <title>Präsentation des Projekts "Neuer Styleguide"</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <meta name="description" content="Erstellt mit RevealJS" />
+    <meta name="author" content="Stefan Knoll" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/solarized.css" id="theme" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h1>Willkommen</h1>
+          <h3>zur Präsentation des Projekts "Neuer Styleguide"</h3>
+          <p>
+            <small
+              >Stefan Knoll | Sebastian Köll | Klaus Lang | Stefan Lindner | Oli
+              Lipsdorf | Rita Kuch | Toni Weindl
+						</small>
+          </p>
+        </section>
+
+											        <section>
+        <section>
+          <h2>Was wollen wir erreichen?</h2>
+          <section id="fragments">
+            <li class="fragment fade-in-then-semi-out">
+              Zusammenarbeit, Wissensaustausch und Lerneffekte verbessern
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              unternehmensweite Standards für die Codebasis, gewährleistet
+              durch definierte Prüf- und Optimierungsprozesse
+						</li>
+            <li class="fragment fade-in-then-semi-out">
+              Sicherheit bei Refactoring und Erweiterungen durch automatische
+              Tests
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              Sichere Ausbringung von Code durch definierte und automatisierte
+              Prozesse
+            </li>
+          </section>
+        </section>
+			</section>
+
+			<section>
+        <section>
+          <h2>Was benötigen wir dazu?</h2>
+          <section id="fragments">
+            <li class="fragment fade-in-then-semi-out">
+              Vorgaben und Hilfen bei der Programmierung
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              Verfahren zur Sicherstellung der gewünschten Programmqualität
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              Verfahren zur Speicherung und gemeinsamen Bearbeitung der Codebasis
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              Verfahren für die sichere und nachvollziehbare Inbetriebnahme von Programmen
+            </li>
+          </section>
+				</section>
+			</section>
+
+			<section>
+				<section>
+        <section id="fragments">
+          <h2>Wie wollen wir anfangen?</h2>
+          <p class="fragment">Zuerst brauchen wir einen neuen Styleguide</p>
+          <p class="fragment">Warum zuerst?</p>
+            <li class="fragment fade-in-then-semi-out">
+              der Aufwand dafür ist überschaubar
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              er ist die Basis von allem anderen
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              für die anstehende Zertifizierung könnte/sollte man ihn verwenden
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              wir erwarten eine vergleichsweise hohe Akzeptanz unter den Kollegen
+            </li>
+          </section>
+				</section>
+			</section>
+
+			<section>
+				<section>
+        <section id="fragments">
+          <h2>Was ist das Ziel dabei?</h2>
+            <li class="fragment fade-in-then-semi-out">
+              wir verfügen ab Anfang Dezember über einen neuen Styleguide
+            </li>
+	            <li class="fragment fade-in-then-semi-out">
+	              er ist für jeden leicht zugänglich
+	            </li>
+            <li class="fragment fade-in-then-semi-out">
+              seine Verwendung ist für alle verbindlich
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              er obliegt selbst der Versionskontrolle und wir haben einen Prozess für seine Anpassung
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              seine Anwendung auf Legacy-Code ist geklärt
+            </li>
+          </section>
+				</section>
+			</section>
+
+			<section>
+        <section>
+          <h2>Was ist zu tun?</h2>
+          <section id="fragments">
+            <li class="fragment fade-in-then-semi-out">
+              Der Vorstand erklärt sein Commitment gegenüber dem Projekt
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              Wir forken den  <a href="https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/" target="_blank">Trivadis-Styleguide</a>
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              Wir passen ihn auf unsere Bedürfnisse an
+            </li>
+          </section>
+				</section>
+			</section>
+
+			<section>
+        <section>
+          <h2>Wo sehen wir Anpassungs- und damit Diskussionsbedarf?</h2>
+          <section id="fragments">
+            <li class="fragment fade-in-then-semi-out">
+              hinsichtlich der Namenskonventionen (PLSQL-Sprachelemente, DB-Objekte)
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              hinsichtlich der Regelung, in welchem Ausmaß die neuen Vorgaben auf Legacy-Code anzuwenden sind
+            </li>
+          </section>
+				</section>
+			</section>
+
+			<section>
+        <section>
+          <h2>Mit welchem Aufwand rechnen wir?</h2>
+          <section id="fragments">
+            <li class="fragment fade-in-then-semi-out">
+              geschätzt haben wir 7 Abstimmungstermine je einer Stunde, dazu Vor- und Nachbereitung
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              wir möchten niemanden von den Diskussionen ausschließen, aber die Anzahl der Teilnehmer soll es erlauben,
+							bei jedem Termin eine abschließende Entscheidung zu treffen
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              für die Handhabung und Bearbeitung der Styleguide-Sourcen rechnen wir mit weiteren 4 Stunden
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              zum Projektabschluss gibt es einen etwa 2-stündigen Vorstellungstermin für alle Kollegen, die Code entwickeln
+            </li>
+          </section>
+				</section>
+			</section>
+
+			<section>
+        <section>
+          <h2>Und was passiert danach?</h2>
+          <section id="fragments">
+            <h3 class="fragment">
+              möglicherweise
+            </h3>
+            <li class="fragment fade-in-then-semi-out">
+              Styleguides für weitere Sprachen (Suitescript) oder Werkzeuge mit grafischen Elementen (APEX, OIC)?
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              Entwicklung und Bereitstellung einer Toolbox für Entwickler
+            </li>
+	            <h3 class="fragment">
+	              und auf jeden Fall
+	            </h3>
+            <li class="fragment fade-in-then-semi-out">
+               die Einrichtung von Verfahren für manuelle und automatisierte Code-Reviews
+            </li>
+          </section>
+				</section>
+			</section>
+
+			<section>
+        <section>
+          <h2>Und jetzt fragt ihr euch natürlich, was Ihr tun müsst?</h2>
+          <section id="fragments">
+            <li class="fragment fade-in-then-semi-out">
+              klatschen
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              begeistert in die Höhe springen
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+              das Budget für die geplanten Maßnahmen bewilligen
+            </li>
+            <li class="fragment fade-in-then-semi-out">
+               und allen Bescheid darüber geben
+            </li>
+          </section>
+				</section>
+			</section>
+
+			<section>
+        <section>
+          <h2>Schön war's, vielen Dank!</h2>
+          </section>
+				</section>
+
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: "zoom", // none/fade/slide/convex/concave/zoom
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          {
+            src: "lib/js/classList.js",
+            condition: function() {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: "plugin/markdown/marked.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src: "plugin/markdown/markdown.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          { src: "plugin/search/search.js", async: true },
+          { src: "plugin/zoom-js/zoom.js", async: true },
+          { src: "plugin/notes/notes.js", async: true }
+        ]
+      });
+    </script>
+  </body>
 </html>
